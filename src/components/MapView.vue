@@ -298,6 +298,16 @@ onMounted(() => {
     maxZoom: 19
   });
 
+  const cartoLight = L.tileLayer(
+      "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+      {
+        attribution:
+          '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 19,
+        detectRetina: true,
+      }
+    );
+
   const layerCodigosPostales = L.tileLayer.wms('https://www.cartociudad.es/wms-inspire/direcciones-ccpp', {
     layers: 'codigo-postal',
     format: 'image/png',
@@ -336,6 +346,7 @@ onMounted(() => {
   });
 
   const baseMaps = {
+    "Carto Light": cartoLight,
     "🗺️ OpenStreetMap": osm,
     "🛰️ Ortofoto PNOA": pnoa,
     "🧭 Base IGN": ignBase
