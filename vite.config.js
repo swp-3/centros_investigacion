@@ -5,7 +5,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
   base: process.env.NODE_ENV === 'production'
-    ? '/visor_ope_enfermeria_gva_2022/'
+    ? '/centros_investigacion/'
     : './',
   plugins: [
     vue(),

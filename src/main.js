@@ -32,6 +32,6 @@ if ('serviceWorker' in navigator) {
 
 export default {
   base: process.env.NODE_ENV === 'production'
-    ? '/visor_ope_enfermeria_gva_2022/'
+    ? '/centros_investigacion/'
     : './',
 }
