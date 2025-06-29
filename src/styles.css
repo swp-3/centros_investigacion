@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+#map {
+  z-index: 0;
+}
+
+
+/* Estilos para Leaflet */
+.leaflet-tooltip {
+  @apply bg-white border border-gray-300 rounded shadow-sm px-2 py-1 text-sm;
+}
+
+.leaflet-tooltip-top:before {
+  @apply border-t border-gray-300;
+}
+
+.leaflet-tooltip-bottom:before {
+  @apply border-b border-gray-300;
+}
+
+/* Ajustes para PrimeVue */
+.p-multiselect {
+  width: 100%;
+}
+
+.p-multiselect-panel {
+  background-color: #f0f6ff !important;
+}
+
+.p-multiselect-item {
+  color: #1e40af !important;
+}
+
+.p-tooltip {
+  @apply bg-white border border-gray-300 rounded shadow-sm px-2 py-1 text-sm;
+}
+
+.p-tooltip-arrow::before {
+  @apply border-t border-gray-300;
+}
+
+.p-tooltip-arrow::after {
+  @apply border-b border-gray-300;
+}
+
+.leaflet-control-custom:hover {
+  background: #e0e7ff !important;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+

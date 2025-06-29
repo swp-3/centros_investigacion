@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/visor_ope_enfermeria_gva_2022/sw.js', { scope: '/visor_ope_enfermeria_gva_2022/' })})}
