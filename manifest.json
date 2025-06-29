@@ -2,7 +2,7 @@
   "name": "Centros Sanitarios GVA. Equipo Investigación Enfermería",
   "short_name": "Centros Sanitarios",
   "description": "Consulta centros sanitarios GVA en la Comunitat Valenciana y los miembros del Equipo de Investigacion de Enfermería.",
-  "theme_color": "#2563eb",
+  "theme_color": "#f9f5ef",
   "background_color": "#ffffff",
   "display": "standalone",
   "icons": [
